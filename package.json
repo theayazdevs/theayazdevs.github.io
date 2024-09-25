@@ -1,6 +1,7 @@
 {
   "name": "portfolio-project",
   "version": "0.1.0",
+  "homepage": "https://theayazdevs.github.io/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.112.1",
