@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For the card flip effect */
+.skill-card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.skill-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #f8f8f8;
+}
+
+/* For the contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* For the Resume page */
+.central-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    /*height: 100px;
+    margin-top: 50px;*/
+    text-align: center;
+}
+
+.orbit {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 6s linear, collapseOrbit 1s ease-in-out 3s forwards;
+}
+
+.icon {
+    position: absolute;
+    font-size: 2rem;
+    color: #ff6b6b;
+    animation: collapseIcons 1s ease-in-out 3s forwards;
+}
+
+.html {
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.css {
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+}
+
+.js {
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+}
+
+.react {
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.java {
+    top: -70px;
+    right: 70px;
+}
+
+.git {
+    bottom: -70px;
+    right: 70px;
+}
+
+.php {
+    bottom: -70px;
+    left: 70px;
+}
+
+.jira {
+    top: -70px;
+    left: 70px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes collapseIcons {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes collapseOrbit {
+    0% {
+        width: 300px;
+        height: 300px;
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+    }
+}

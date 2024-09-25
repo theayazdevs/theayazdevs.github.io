@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+// Import React and Router for routing between pages
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+// Import header and footer components (shown on every page)
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+// Import the routes (handles navigation between different pages)
+import Routes from "./router";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Set up the router for navigation
+    <Router>
+      {/* Display the header at the top of every page */}
+      <Header />
+      {/* Handle page content based on current route */}
+      <Routes />
+      {/* Display the footer at the bottom of every page */}
+      <Footer />
+    </Router>
   );
 }
-
 export default App;
