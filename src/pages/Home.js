@@ -94,7 +94,7 @@ const Home = () => {
       {" "}
       <div className="text-4xl md:text-6xl font-bold mb-4 text-center">
         <ReactTyped
-          strings={["Welcome to John Kennedy's Portfolio"]}
+          strings={["Welcome to Ayaz Ahmad's Portfolio"]}
           typeSpeed={50}
           // Speed of typing
           backSpeed={50} // Speed of backspacing
