@@ -62,7 +62,7 @@ const Contact = () => {
     // Clear form after submission
   };
   return (
-    <div className="contact-form">
+    <div className="contact-form bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-lg">
       {" "}
       <h2 className="text-center text-5xl font-bold">Contact Me</h2>{" "}
       <h2 className="text-center">(uses an API to send me form data)</h2>{" "}

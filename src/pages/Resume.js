@@ -24,10 +24,10 @@ const Resume = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       {" "}
       {/*<h1 className="text-3xl font-bold mb-6 text-center">Resume</h1>{" "}*/}
-      <div className="central-text">
+      <div className="central-text ">
         {" "}
         <h2>Resume</h2>{" "}
         {!isCollapsed && (
@@ -60,19 +60,19 @@ const Resume = () => {
           </div>
         )}{" "}
       </div>
-      <p className="text-lg text-gray-800 mb-4 text-center">
+      <p className="text-lg mb-4 text-center">
         {" "}
         Here’s a summary of my professional experience and skills. You can also
         download my full resume below.{" "}
       </p>{" "}
-      <ul className="list-disc pl-5 mb-6 text-gray-800">
+      <ul className="list-disc pl-5 mb-6 ">
         {" "}
         <li>
           <b>
             Software Engineer Trainee at Hexcode Technologies LLC (Jan 2024 -
             May 2024)
           </b>
-          <ul className="list-disc pl-5 mb-6 text-gray-800">
+          <ul className="list-disc pl-5 mb-6 ">
             <li>
               Assist senior developers in building user interfaces and
               implementing front-end features using ReactJS.
@@ -101,7 +101,7 @@ const Resume = () => {
         </li>{" "}
         <li>
           <b>HackCamp2022 at University of Salford (Jan 2022)</b>
-          <ul className="list-disc pl-5 mb-6 text-gray-800">
+          <ul className="list-disc pl-5 mb-6 ">
             <li>
               Facilitated and participated in all Scrum ceremonies, including
               sprint planning, daily stand-ups, sprint reviews, and
@@ -122,7 +122,7 @@ const Resume = () => {
             Bachelors of Software Engineering (BSc Hons) from University of
             Salford
           </b>
-          <ul className="list-disc pl-5 mb-6 text-gray-800">
+          <ul className="list-disc pl-5 mb-6 ">
             <li>Achieved 1st class.</li>
           </ul>
         </li>{" "}

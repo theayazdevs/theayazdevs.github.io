@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For light mode */
+body {
+    @apply bg-white text-black;
+}
+
+/* For dark mode */
+.dark body {
+    @apply bg-gray-900 text-white;
+}
+
+.badge {
+    @apply bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 px-3 py-1 rounded-full text-sm;
+}
+
 /* For the card flip effect */
 .skill-card {
     perspective: 1000px;
@@ -40,6 +54,8 @@
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -179,4 +195,48 @@ button {
         width: 0;
         height: 0;
     }
+}
+
+/* Slideshow CSS */
+.slideshow-container {
+    /*background-color: red;*/
+    position: relative;
+    width: 100%;
+    /* You can set this to a specific value like 400px */
+    /*max-width: 500px;*/
+    /* Set a maximum width */
+    height: 100%;
+    /* Set a fixed height */
+    overflow: hidden;
+    /* Hide overflow */
+    border-radius: 8px;
+    /* Optional for rounded corners */
+    margin-bottom: 16px;
+    /* Space between slideshow and description */
+}
+
+.slideshow-image {
+    /*background-color: #4CAF50;*/
+    max-width: 100%;
+    /* Make the image take full width of the container */
+    max-height: 100%;
+    /* Make the image take full height of the container */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+    transition: opacity 0.5s ease;
+    /* Optional for smooth transitions */
+}
+
+/* Flex container to align slideshow and description */
+.project-container {
+    display: flex;
+    /* Use flexbox to align items */
+    gap: 16px;
+    /* Space between slideshow and description */
+}
+
+/* Project Description Styles */
+.project-description {
+    flex: 1;
+    /* Allow description to take up remaining space */
 }

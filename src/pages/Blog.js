@@ -43,7 +43,11 @@ const Blog = () => {
 
           const bgColor = getRandomColor();
           return (
-            <div key={blog.id} className="p-4 bg-white rounded-lg shadow-md">
+            /*<div key={blog.id} className="p-4 bg-white rounded-lg shadow-md">*/
+            <div
+              key={blog.id}
+              className="p-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-lg shadow-md"
+            >
               {" "}
               {/* Placeholder image with a random background color */}{" "}
               <img
@@ -54,9 +58,9 @@ const Blog = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />{" "}
               {/* Blog title */}{" "}
-              <h2 className="text-xl font-semibold mt-4">{blog.title}</h2>{" "}
+              <h2 className="text-xl font-semibold mt-4 ">{blog.title}</h2>{" "}
               {/* Blog description */}{" "}
-              <p className="mt-2 text-gray-700">{blog.description}</p>{" "}
+              <p className="mt-2 ">{blog.description}</p>{" "}
               {/* Link to full blog */}{" "}
               <a
                 href={blog.url}

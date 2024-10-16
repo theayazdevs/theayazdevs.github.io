@@ -18,7 +18,8 @@ const About = () => {
         </a>
         )
       </h1>
-      <div className="text-8xl font-large text-gray-700 py-60">
+      {/*<div className="text-8xl font-large text-gray-700 py-60">*/}
+      <div className="text-8xl font-large bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-lg py-60">
         <Typewriter
           words={[
             "I'm a passionate Software Developer.",

@@ -1,4 +1,5 @@
 // Import React and Router for routing between pages
+//import React from "react";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 // Import header and footer components (shown on every page)
