@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import Slideshow from "../components/Slideshow";
 import { FaComputer } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
+import { FaUndoAlt } from "react-icons/fa";
 const skills = [
   {
     name: "HTML",
@@ -270,7 +271,7 @@ const Home = () => {
             }`}
           >
             {" "}
-            {showWork ? "⭯" : "⭯"}{" "}
+            {showWork ? <FaUndoAlt /> : <FaUndoAlt />}{" "}
           </span>{" "}
           {/* Text (changes as button slides) */}{" "}
           <span className="text-lg">
@@ -356,7 +357,7 @@ const Home = () => {
       >
         {" "}
         {/*{showWork ? "⭯" : "⮌"} */}
-        <span> {showWork ? "⭯" : "⭯"} </span>{" "}
+        <span> {showWork ? <FaUndoAlt /> : <FaUndoAlt />} </span>{" "}
       </button>
     </div>
   );
